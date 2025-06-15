@@ -9,8 +9,7 @@ https://github.com/xphoenixua/data_streaming_kafka_hw3
 3. Check `processor-1` service's logs for the statistics. 
 4. To stop the app:
    `docker compose down -v`
-## Screenshots of top five domains 
-![[Pasted image 20250615200833.png|400]]
+
 ## Pipeline details
 The initial approach for this task might be a simple producer-consumer model. In that pattern, I would write a consumer with an explicit `for` loop that manually pulls messages from Kafka. Inside this loop, I would manage the state myself, like creating and updating a Python `Counter` object to store domain counts, and then periodically printing the results.
 
